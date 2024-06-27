@@ -3,7 +3,7 @@ import Link from "next/link";
 import { navItems } from "@/app/actions";
 
 export default function Footer1() {
-    const currentYear: number = new Date().getFullYear();
+  const currentYear: number = new Date().getFullYear();
 
   return (
     <footer className="bg-black">
@@ -76,13 +76,13 @@ export default function Footer1() {
                   Quick links
                 </h3>
                 {navItems.map((item, index) => (
-                    <Link
+                  <Link
+                    key={index}
                     href={item.href}
                     className="block mt-2 text-sm text-gray-300 dark:text-gray-400 hover:underline"
-                    >
+                  >
                     {item.title}
-                    </Link>
-
+                  </Link>
                 ))}
                 <Link
                   href="#"
@@ -117,7 +117,7 @@ export default function Footer1() {
                   href="#"
                   className="block mt-2 text-sm text-gray-300 dark:text-gray-400 hover:underline"
                 >
-                    Branding
+                  Branding
                 </Link>
               </div>
               <div>
@@ -134,7 +134,7 @@ export default function Footer1() {
                   href="#"
                   className="block mt-2 text-sm text-gray-300 dark:text-gray-400 hover:underline"
                 >
-                  Youtube 
+                  Youtube
                 </Link>
                 <Link
                   href="#"
@@ -143,7 +143,6 @@ export default function Footer1() {
                   Linkedln
                 </Link>
               </div>
-              
             </div>
           </div>
         </div>
