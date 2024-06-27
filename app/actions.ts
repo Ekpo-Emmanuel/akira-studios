@@ -1,3 +1,7 @@
+import { Video, Camera, TvMinimalPlay, Layers, Sparkles, Sun } from 'lucide-react'
+
+
+
 interface NavItem {
     title: string;
     href: string;
@@ -15,9 +19,14 @@ interface Package {
     niche: string;
     features: Feature[];
     callToAction: string;
-  }
+}
   
-
+interface Service {
+    title: string;
+    description: string;
+    icon: any;
+}
+  
 
 export const navItems: NavItem[] = [
     { title: 'Home', href:"/" },
@@ -67,5 +76,45 @@ export const packages: Package[] = [
             { name: "20 lifestyle Images"},
         ], 
         callToAction: "Contact us",
+    },
+];
+
+
+export const services: Service[] = [
+    {
+      title: "Videography",
+      description:
+        "Provident ab nulla quod dignissimos vel non corrupti doloribus voluptatum eveniet",
+        icon: Video
+    },
+    {
+      title: "Photography",
+      description:
+        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident ab nulla quod dignissimos vel non corrupti doloribus voluptatum eveniet",
+        icon: Camera
+    },
+    {
+      title: "Animation",
+      description:
+        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident ab nulla quod dignissimos vel non corrupti doloribus voluptatum eveniet",
+        icon: TvMinimalPlay
+    },
+    {
+      title: "Storyboarding",
+      description:
+        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident ab nulla quod dignissimos vel non corrupti doloribus voluptatum eveniet",
+        icon: Layers
+    },
+    {
+      title: "VFX",
+      description:
+        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident ab nulla quod dignissimos vel non corrupti doloribus voluptatum eveniet",
+        icon: Sparkles
+    },
+    {
+      title: "Lighting",
+      description:
+        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident ab nulla quod dignissimos vel non corrupti doloribus voluptatum eveniet",
+        icon: Sun
     },
 ];
