@@ -5,7 +5,7 @@ import Image from "next/image";
 
 export default function Header() {
   return (
-    <nav className="bg-white fixed w-full z-20 top-0 start-0 border-b border-gray-200 dark:border-gray-600">
+    <nav className="bg-white  start-0 border-b border-gray-200 dark:border-gray-600">
       <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
         <Link
           href="/"
@@ -19,12 +19,9 @@ export default function Header() {
           />
         </Link>
         <div className="flex md:order-2 space-x-3 md:space-x-0 rtl:space-x-reverse">
-          <Link
-            href="/contact"
-            className="text-white bg-black hover:bg-gray-800 focus:ring-4 focus:outline-none focus:ring-gray-300 font-medium rounded-none text-sm px-4 py-2 text-center dark:bg-gray-600  dark:focus:ring-gray-800"
-          >
-            Contact
-          </Link>
+          <Link href='/contact' className="w-full px-4 py-2 tracking-wide text-white capitalize transition-colors duration-300 transform bg-black rounded-none hover:bg-black/70 focus:outline-none focus:bg-black focus:ring focus:ring-blue-300 focus:ring-opacity-80">
+          Contact us
+        </Link>
           <button
             data-collapse-toggle="navbar-sticky"
             type="button"

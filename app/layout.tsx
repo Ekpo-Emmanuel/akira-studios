@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Inter, Prata, Lato } from "next/font/google";
 import "./globals.css";
 import Header from "./(routes)/_components/Header/Header";
+import Footer1 from "./(routes)/_components/Footer/Footer1";
 
 const inter = Inter({ subsets: ["latin"] });
 const prata = Prata({subsets: ["cyrillic"], weight:["400"] })
@@ -22,7 +23,8 @@ export default function RootLayout({
     <html lang="en">
       <body className={lato.className}>
         <Header />
-        {children}
+         {children}
+        <Footer1 />
       </body>
     </html>
   );
