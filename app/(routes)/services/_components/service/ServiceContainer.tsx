@@ -29,7 +29,7 @@ export default function ServiceContainer() {
               <p className="text-gray-200">{service.description}</p>
               <Link
                 href="#"
-                className="inline-flex items-center -mx-1 text-sm text-blue-500 capitalize transition-colors duration-300 transform dark:text-blue-400 hover:underline hover:text-blue-600 dark:hover:text-blue-500"
+                className="inline-flex items-center -mx-1 text-sm text-yellow capitalize transition-colors duration-300 transform dark:text-blue-400 hover:underline hover:text-blue-600 dark:hover:text-blue-500"
               >
                 <span className="mx-1">read more</span>
                 <svg
