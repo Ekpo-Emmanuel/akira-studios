@@ -143,8 +143,8 @@ const ReviewCard = ({
 
 export default function Hero() {
   return (
-    <div className="bg-black py-20 pb-0 overflow-hidden">
-      <div className="p-10 lg:p-20">
+    <div className="bg-black px-0 py-20 overflow-hidden">
+      <div className="p-8 lg:p-20">
         <h1
           className={`${prata.className} text-white text-3xl md:text-4xl lg:text-5xl text-balance leading-[50px] lg:leading-[65px]`}
         >
@@ -164,7 +164,7 @@ export default function Hero() {
         ))}
       </Marquee> */}
         {/* <div className="pointer-events-none absolute inset-x-0 top-0 h-1/3 bg-gradient-to-b from-black" /> */}
-        <div className="pointer-events-none absolute inset-x-0 bottom-0 h-1/3 bg-gradient-to-t from-white lg:from-black" />
+        {/* <div className="pointer-events-none absolute inset-x-0 bottom-0 h-1/3 bg-gradient-to-t from-white lg:from-black" /> */}
       </div>
     </div>
   );
