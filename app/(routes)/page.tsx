@@ -5,6 +5,7 @@ import WhyUs from "./_components/_Home/WhyUs";
 import Services from "./_components/_Home/Services";
 import Cta1 from "./_components/CTA/Cta1";
 import Contact from "./_components/_Home/Contact";
+import Team from "./_components/_Home/Team";
 
 export default function Home() {
   return (
@@ -15,17 +16,16 @@ export default function Home() {
           backgroundImage: "url('/assets/images/hero.png')",
           backgroundPosition: "center",
           objectFit: 'cover',
-          backgroundSize: 'contain'
+          backgroundSize: 'cover',
+          backgroundRepeat: 'no-repeat'
         }}
       >
-          {/* <video autoPlay loop muted className="absolute inset-0 object-cover w-full h-full" >
-            <source src={videoUrl} type="video/mp4" />
-          </video> */}
           <Hero />
         </div>
         <About />
         <WhyUs />
         <Services />
+        <Team />
         <Cta1 />
         <Contact />
     </div>

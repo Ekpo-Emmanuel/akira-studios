@@ -9,8 +9,8 @@ const prata = Prata({ subsets: ["cyrillic"], weight: ["400"] });
 
 export default function Services() {
   return (
-    <section className="mx-auto max-w-screen-2xl">
-      <div className="py-24">
+    <section className="">
+      <div className="py-12 sm:py-24 pb-0 ">
         <div className='grid grid-cols-1 md:grid-cols-[1.2fr_1.5fr] lg:grid-cols-[1.2fr_1.7fr] gap-10'>
           <div className='px-4 md:pl-12 lg:pl-24'>
             <div className="max-w-xl mx-auto lg:mx-0">
@@ -19,12 +19,12 @@ export default function Services() {
         >
           Our Services
         </h1>
-        <p className="mt-4 sm:mt-8 text-base md:text-xl font-medium text-black">
+        <p className="mt-4 sm:mt-8 text-base md:text-xl  font-medium text-black">
         From eye catching photography to immersive video content, our comprehensive suite of digital marketing services is designed to elevate your brand and drive real results.
         </p>
       </div>
           </div>
-          <div className='relative md:flex md:justify-between max-w-7xl'>
+          <div className='relative md:flex md:justify-between overflow-x-hidden lg:max-w-[unset]'>
             <div className='bg-black text-white px-10 py-10 md:w-[78%] md:h-fit '>
               Unlock your brands potential - where creativity and excellence collide! Inspired by our name, 
               "light," we illuminate your brand with unparalleled brilliance. 

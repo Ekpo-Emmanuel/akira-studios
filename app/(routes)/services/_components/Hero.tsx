@@ -14,9 +14,7 @@ export default function Hero() {
             <h1
               className={`text-3xl font-light text-white relative leading-[50px] tracking-tighter  ${prata.className}`}
             >
-              {`Welcome to Akira Studios, where creativity meets excellence.
-              Inspired by the meaning of our name, "light," we strive to
-              illuminate your brand with unparalleled brilliance and artistry.`}
+              {`Empowering you to elevate your online presence with captivating content, committed to assisting industry leaders in dominating the digital landscape.`}
             </h1>
           </div>
           <div className=" h-full">
