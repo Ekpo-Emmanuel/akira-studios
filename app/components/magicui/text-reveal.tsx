@@ -32,7 +32,7 @@ export const TextRevealByWord: FC<TextRevealByWordProps> = ({
       >
         <p
           ref={targetRef}
-          className={`${prata.className} flex flex-wrap text-3xl sm:text-4xl font-light text-black lg:text-4xl relative leading-[50px] md:leading-[60px] tracking-tighter lg:leading-[70px]`}
+          className={`${prata.className} flex flex-wrap text-3xl sm:text-4xl font-light text-black lg:text-4xl relative leading-[50px] sm:leading-[70px] tracking-tighter lg:leading-[70px]`}
         >
           {words.map((word, i) => {
             const start = i / words.length;

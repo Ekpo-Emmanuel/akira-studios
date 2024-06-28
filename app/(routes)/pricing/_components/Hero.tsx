@@ -9,11 +9,11 @@ export default function Hero() {
   return (
     <section 
         style={{
-            backgroundImage: "url('/assets/images/pricing.jpeg')",
-            objectFit: 'cover',
-            // backgroundPositionY: '300px',
-            // width: '100%',
-            // height: '100%'
+          backgroundImage: "url('/assets/images/pricing.jpeg')",
+          backgroundPosition: "center",
+          objectFit: 'cover',
+          backgroundSize: 'cover',
+          backgroundRepeat: 'no-repeat'
         }}
     className="flex relative items-center justify-center w-full">
       <div className="px-4 mx-auto overflow-hidden md:px-12 py-32 max-w-7xl ">

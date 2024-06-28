@@ -1,57 +1,95 @@
-import React from "react";
+"use client";
+import { useEffect, useState } from "react";
 import Link from "next/link";
 import HeaderLink from "./HeaderLink";
 import Image from "next/image";
 
 export default function Header() {
+  const [open, setOpen] = useState(false);
+  const [scrollY, setScrollY] = useState(0);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      setScrollY(window.scrollY);
+    };
+
+    window.addEventListener('scroll', handleScroll);
+
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
+
+
+  const handleLinkClick = () => {
+    setOpen(false);
+  };
+
   return (
-    <nav className="bg-white  start-0 border-b border-gray-200 dak:border-gray-600">
-      <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
+    <nav className={`start-0 fixed w-full z-10 dak:border-gray-600 transition ${ open ? 'bg-white md:bg-inherit' : ''} ${scrollY > 100 ? 'bg-white border-b border-gray-200' : 'bg-transparent'}`}>
+      <div className={`max-w-screen-xl flex flex-wrap items-center justify-between mx-auto ${scrollY > 100 ? 'p-4' : 'p-8'}`}>
         <Link
           href="/"
           className="flex items-center space-x-3 rtl:space-x-reverse"
         >
-          <Image
-            src="/assets/images/logo.png"
-            alt="Akira Studios"
-            height={30}
-            width={50}
-          />
+          {scrollY > 100 ? 
+            <img
+              src={`/assets/images/logo.png`}
+              alt="Akira Studios"
+              className="w-20 transition"
+            /> : 
+            <img
+              src={`/assets/images/logo_dark.png`}
+              alt="Akira Studios"
+              className="w-10 transition"
+            /> 
+          }
         </Link>
         <div className="flex md:order-2 space-x-3 md:space-x-0 rtl:space-x-reverse">
-          <Link href='/contact' className="w-full px-4 py-2 tracking-wide text-white capitalize transition-colors duration-300 transform bg-black rounded-none hover:bg-black/70 focus:outline-none focus:bg-black focus:ring focus:ring-blue-300 focus:ring-opacity-80">
+          <Link href='/contact' className="hidden md:block w-full px-4 py-2 tracking-wide text-white capitalize transition-colors duration-300 transform bg-black rounded-none hover:bg-black/70 focus:outline-none focus:bg-black focus:ring focus:ring-blue-300 focus:ring-opacity-80">
           Contact us
         </Link>
           <button
-            data-collapse-toggle="navbar-sticky"
-            type="button"
-            className="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dak:text-gray-400 dak:hover:bg-gray-700 dak:focus:ring-gray-600"
-            aria-controls="navbar-sticky"
-            aria-expanded="false"
+            className={`text-black md:hidden  ${
+              open ? "bg-black text-white" : "bg-faded-white"
+            }  w-14 h-14 flex items-center justify-center bg-black text-white rounded-full`}
+            onClick={() => setOpen(!open)}
           >
-            <span className="sr-only">Open main menu</span>
-            <svg
-              className="w-5 h-5"
-              aria-hidden="true"
-              xmlns="http://www.w3.org/2000/svg"
-              fill="none"
-              viewBox="0 0 17 14"
-            >
-              <path
+            {open ? (
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                className="h-8 w-8"
+                viewBox="0 0 20 20"
+                fill="currentColor"
+              >
+                <path
+                  fillRule="evenodd"
+                  d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
+                  clipRule="evenodd"
+                />
+              </svg>
+            ) : (
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                className="h-8 w-8"
+                fill="none"
+                viewBox="0 0 24 24"
                 stroke="currentColor"
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                strokeWidth={2}
-                d="M1 1h15M1 7h15M1 13h15"
-              />
-            </svg>
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth={2}
+                  d="M4 8h16M4 16h16"
+                />
+              </svg>
+            )}
           </button>
         </div>
         <div
-          className="items-center justify-between hidden w-full md:flex md:w-auto md:order-1"
-          id="navbar-sticky"
+          className={`items-center justify-between w-full md:flex md:w-auto md:order-1 ${ open ? 'block ' : 'hidden'}`}
         >
-          <HeaderLink />
+          <HeaderLink onClick={handleLinkClick} />
         </div>
       </div>
     </nav>
