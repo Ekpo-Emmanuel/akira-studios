@@ -181,7 +181,7 @@ export default function Form() {
         </div>
         <div className="relative z-0 w-full mb-5 group">
           <textarea
-            className="peer block min-h-[auto] text-[20px] rounded-none w-full rounded border-0 border-b-2 border-gray-300 appearance-none bg-transparent py-[0.32rem] leading-[1.6] outline-none transition-all duration-200 ease-linear focus:placeholder:opacity-100 peer-focus:text-primary data-[twe-input-state-active]:placeholder:opacity-100 motion-reduce:transition-none dak:text-white dak:placeholder:text-neutral-300 dak:peer-focus:text-primary [&:not([data-twe-input-placeholder-active])]:placeholder:opacity-0"
+            className="peer block min-h-[auto] text-[20px] rounded-none w-full border-0 border-b-2 border-gray-300 appearance-none bg-transparent py-[0.32rem] leading-[1.6] outline-none transition-all duration-200 ease-linear focus:placeholder:opacity-100 peer-focus:text-primary data-[twe-input-state-active]:placeholder:opacity-100 motion-reduce:transition-none dak:text-white dak:placeholder:text-neutral-300 dak:peer-focus:text-primary [&:not([data-twe-input-placeholder-active])]:placeholder:opacity-0"
             id="message"
             rows={3}
             placeholder="Your message"
