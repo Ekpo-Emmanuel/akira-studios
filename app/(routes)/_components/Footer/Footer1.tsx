@@ -19,14 +19,14 @@ export default function Footer1() {
                 /> */}
                 <p className="text-white">Akira Studios</p>
               </Link>
-              <p className="max-w-sm mt-2 text-gray-200 dark:text-gray-400">
+              <p className="max-w-sm mt-2 text-gray-200 dak:text-gray-400">
                 At Akira Studios, we are passionate about elevating your digital
                 marketing strategy.
               </p>
               <div className="flex mt-6 -mx-2">
                 <Link
                   href="#"
-                  className="mx-2 text-gray-600 transition-colors duration-300 dark:text-gray-300 hover:text-blue-500 dark:hover:text-blue-400"
+                  className="mx-2 text-gray-600 transition-colors duration-300 dak:text-gray-300 hover:text-blue-500 dak:hover:text-blue-400"
                   aria-label="Reddit"
                 >
                   <svg
@@ -40,7 +40,7 @@ export default function Footer1() {
                 </Link>
                 <Link
                   href="#"
-                  className="mx-2 text-gray-600 transition-colors duration-300 dark:text-gray-300 hover:text-blue-500 dark:hover:text-blue-400"
+                  className="mx-2 text-gray-600 transition-colors duration-300 dak:text-gray-300 hover:text-blue-500 dak:hover:text-blue-400"
                   aria-label="Facebook"
                 >
                   <svg
@@ -54,7 +54,7 @@ export default function Footer1() {
                 </Link>
                 <Link
                   href="#"
-                  className="mx-2 text-gray-600 transition-colors duration-300 dark:text-gray-300 hover:text-blue-500 dark:hover:text-blue-400"
+                  className="mx-2 text-gray-600 transition-colors duration-300 dak:text-gray-300 hover:text-blue-500 dak:hover:text-blue-400"
                   aria-label="Github"
                 >
                   <svg
@@ -72,73 +72,73 @@ export default function Footer1() {
           <div className="mt-6 lg:mt-0 lg:flex-1">
             <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3">
               <div>
-                <h3 className="text-gray-300 uppercase dark:text-white">
+                <h3 className="text-gray-300 uppercase dak:text-white">
                   Quick links
                 </h3>
                 {navItems.map((item, index) => (
                   <Link
                     key={index}
                     href={item.href}
-                    className="block mt-2 text-sm text-gray-300 dark:text-gray-400 hover:underline"
+                    className="block mt-2 text-sm text-gray-300 dak:text-gray-400 hover:underline"
                   >
                     {item.title}
                   </Link>
                 ))}
                 <Link
                   href="#"
-                  className="block mt-2 text-sm text-gray-300 dark:text-gray-400 hover:underline"
+                  className="block mt-2 text-sm text-gray-300 dak:text-gray-400 hover:underline"
                 >
                   Contact us
                 </Link>
               </div>
               <div>
-                <h3 className="text-gray-300 uppercase dark:text-white">
+                <h3 className="text-gray-300 uppercase dak:text-white">
                   Our services
                 </h3>
                 <Link
                   href="#"
-                  className="block mt-2 text-sm text-gray-300 dark:text-gray-400 hover:underline"
+                  className="block mt-2 text-sm text-gray-300 dak:text-gray-400 hover:underline"
                 >
                   Photography
                 </Link>
                 <Link
                   href="#"
-                  className="block mt-2 text-sm text-gray-300 dark:text-gray-400 hover:underline"
+                  className="block mt-2 text-sm text-gray-300 dak:text-gray-400 hover:underline"
                 >
                   Videography
                 </Link>
                 <Link
                   href="#"
-                  className="block mt-2 text-sm text-gray-300 dark:text-gray-400 hover:underline"
+                  className="block mt-2 text-sm text-gray-300 dak:text-gray-400 hover:underline"
                 >
                   Social media
                 </Link>
                 <Link
                   href="#"
-                  className="block mt-2 text-sm text-gray-300 dark:text-gray-400 hover:underline"
+                  className="block mt-2 text-sm text-gray-300 dak:text-gray-400 hover:underline"
                 >
                   Branding
                 </Link>
               </div>
               <div>
-                <h3 className="text-gray-300 uppercase dark:text-white">
+                <h3 className="text-gray-300 uppercase dak:text-white">
                   Connect with us
                 </h3>
                 <Link
                   href="#"
-                  className="block mt-2 text-sm text-gray-300 dark:text-gray-400 hover:underline"
+                  className="block mt-2 text-sm text-gray-300 dak:text-gray-400 hover:underline"
                 >
                   Instagram
                 </Link>
                 <Link
                   href="#"
-                  className="block mt-2 text-sm text-gray-300 dark:text-gray-400 hover:underline"
+                  className="block mt-2 text-sm text-gray-300 dak:text-gray-400 hover:underline"
                 >
                   Youtube
                 </Link>
                 <Link
                   href="#"
-                  className="block mt-2 text-sm text-gray-300 dark:text-gray-400 hover:underline"
+                  className="block mt-2 text-sm text-gray-300 dak:text-gray-400 hover:underline"
                 >
                   Linkedln
                 </Link>
@@ -146,9 +146,9 @@ export default function Footer1() {
             </div>
           </div>
         </div>
-        <hr className="h-px my-6 bg-gray-700 border-none dark:bg-gray-700" />
+        <hr className="h-px my-6 bg-gray-700 border-none dak:bg-gray-700" />
         <div>
-          <p className="text-center text-gray-500 dark:text-gray-400">
+          <p className="text-center text-gray-500 dak:text-gray-400">
             © Akira Studios {currentYear} - All rights reserved
           </p>
         </div>

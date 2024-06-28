@@ -11,7 +11,7 @@ export default function HeaderItem({ title, href }: NavItem) {
     <li>
         <Link
             href={href}
-            className="block py-2 px-3 text-black  md:p-0"
+            className="block py-2 px-3 text-black text-[16px]  md:p-0"
             aria-current="page"
         >
             {title}

@@ -6,7 +6,7 @@ import PriceItem from "./PriceItem";
 
 export default function PriceContainer() {
   return (
-    <div className="bg-white dark:bg-gray-900 flex items-center justify-center">
+    <div className="bg-white dak:bg-gray-900 flex items-center justify-center">
       <div className="container px-6 py-24 mx-auto">
         <div className="">
           <div className="">

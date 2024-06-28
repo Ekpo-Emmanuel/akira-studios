@@ -6,6 +6,7 @@ import {
   BiLogoFacebookCircle,
   BiLogoInstagramAlt,
   BiLogoTwitter,
+  BiLogoLinkedinSquare
 } from "react-icons/bi";
 
 export default function page() {
@@ -44,17 +45,17 @@ export default function page() {
               <p className="font-medium text-gray-500">follow us on</p>
               <ul className="flex gap-4">
                 <li>
-                  <Link href="#" target="_blank">
-                    <BiLogoFacebookCircle size={55} />
+                  <Link href="https://www.linkedin.com/company/akira-media-marketing/" target="_blank">
+                    <BiLogoLinkedinSquare size={55} />
                   </Link>
                 </li>
                 <li>
-                  <Link href="#" target="_blank">
+                  <Link href="https://www.instagram.com/akiramediamarketing/" target="_blank">
                     <BiLogoInstagramAlt size={55} />
                   </Link>
                 </li>
                 <li>
-                  <Link href="#" target="_blank">
+                  <Link href="https://x.com/media_akira" target="_blank">
                     <BiLogoTwitter size={55} />
                   </Link>
                 </li>

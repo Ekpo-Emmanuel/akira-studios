@@ -13,7 +13,9 @@ export default function Home() {
         className="relative" 
         style={{
           backgroundImage: "url('/assets/images/hero.png')",
-          backgroundPosition: "center"
+          backgroundPosition: "center",
+          objectFit: 'cover',
+          backgroundSize: 'contain'
         }}
       >
           {/* <video autoPlay loop muted className="absolute inset-0 object-cover w-full h-full" >

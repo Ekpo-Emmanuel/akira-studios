@@ -3,8 +3,8 @@ import PageHeaderTitle from "../Title/PageHeaderTitle";
 
 export default function Cta1() {
   return (
-    <section className="p-4">
-      <div className="bg-black relative items-center w-full px-4 pb-6 sm:pb-24 py-24 mx-auto overflow-hidden md:px-8 lg:px-12 max-w-7xl">
+    <section className="bg-black">
+      <div className=" relative items-center w-full px-4 pb-6 sm:pb-24 py-24 mx-auto overflow-hidden md:px-8 lg:px-12 max-w-7xl">
         <div className="grid items-start grid-cols-1 gap-12 md:grid-cols-2">
           <PageHeaderTitle
             subTitle="Get in touch"

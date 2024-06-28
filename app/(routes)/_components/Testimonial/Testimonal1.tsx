@@ -124,14 +124,14 @@ export default function Testimonal1() {
           />
         </div>
         
-        <div className='mt-10  grid grid-cols-1 gap-8 lg:grid-cols-3 lg:gap-16 '>
+        <div className='mt-20 grid grid-cols-1 gap-8 lg:grid-cols-3 lg:gap-16 '>
             <div className='hidden lg:block'>
               <div className="h-full flex flex-col gap-4">
                 {testimonials.slice(3).map((testimonial, index) => (
                   <blockquote key={index} className="flex flex-col justify-between border bg-white/90  p-4">
                     <footer className="flex items-center gap-6">
-                      <div className="relative inline-flex items-center justify-center w-10 h-10 overflow-hidden bg-gray-100 rounded-full dark:bg-gray-600">
-                          <span className="font-medium text-gray-600 dark:text-gray-300">JL</span>
+                      <div className="relative inline-flex items-center justify-center w-10 h-10 overflow-hidden bg-gray-100 rounded-full dak:bg-gray-600">
+                          <span className="font-medium text-gray-600 dak:text-gray-300">JL</span>
                       </div>
 
                       <div className=''>
@@ -183,8 +183,8 @@ export default function Testimonal1() {
                           <AvatarFallback>CN</AvatarFallback>
                       </Avatar> */}
       
-                      <div className="relative inline-flex items-center justify-center w-10 h-10 overflow-hidden bg-gray-100 rounded-full dark:bg-gray-600">
-                          <span className="font-medium text-gray-600 dark:text-gray-300">JL</span>
+                      <div className="relative inline-flex items-center justify-center w-10 h-10 overflow-hidden bg-gray-100 rounded-full dak:bg-gray-600">
+                          <span className="font-medium text-gray-600 dak:text-gray-300">JL</span>
                       </div>
 
                       <div className=''>
