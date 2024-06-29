@@ -21,9 +21,9 @@ export default function Home() {
           backgroundRepeat: 'no-repeat'
         }}
       >
-          <Hero />
-        </div>
-        {/* <Cta2 /> */}
+        <Hero />
+      </div>
+        <Cta2 />
         <About />
         <WhyUs />
         <Services />
