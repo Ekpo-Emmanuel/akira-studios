@@ -14,7 +14,7 @@ export default function page() {
     <div className="max-w-7xl mx-auto mb-20">
       <div className="grid lg:grid-cols-2 gap-10 lg:gap-0">
         <Hero />
-        <div className="p-4 md:px-8 grid gap-5">
+        <div className="p-4 lg:py-32 md:px-8 grid gap-5">
           <Form />
           <div className="relative py-3">
             <div

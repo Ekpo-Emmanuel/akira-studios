@@ -13,7 +13,7 @@ export default function WhyUs() {
                 description="At Akira Studios, we are a team of experienced creatives who are dedicated to helping businesses like yours achieve their digital goals."
                 buttonActive={true}
                 button="Get Started"
-                url="/#"
+                url="/contact"
             />
           <div className="hidden lg:block lg:mt-0 lg:ml-auto">
             <div className="absolute transform lg:-translate-y-1/2 lg:left-1/2 lg:top-1/2 lg:translate-x-8 sm:left-1/2 sm:top-0 sm:translate-x-8">

@@ -26,7 +26,7 @@ export default function Header() {
   };
 
   return (
-    <nav className={`start-0 fixed w-full z-10 dak:border-gray-600 transition ${ open ? 'bg-white md:bg-inherit' : ''} ${scrollY > 100 ? 'bg-white border-b border-gray-200' : 'bg-transparent'}`}>
+    <nav className={`start-0 fixed w-full z-10 dak:border-gray-600 transition ${ open ? 'bg-white  md:bg-inherit' : ''} ${scrollY > 100 ? 'bg-white border-b border-gray-200' : 'bg-transparent'}`}>
       <div className={`max-w-screen-xl flex flex-wrap items-center justify-between mx-auto ${scrollY > 100 ? 'p-4' : 'p-8'}`}>
         <Link
           href="/"
@@ -34,9 +34,9 @@ export default function Header() {
         >
           {scrollY > 100 ? 
             <img
-              src={`/assets/images/logo.png`}
+              src={`${ open ? '/assets/images/logo_dark.png' : '/assets/images/logo.png'}`}
               alt="Akira Studios"
-              className="w-20 transition"
+              className="w-10 transition"
             /> : 
             <img
               src={`/assets/images/logo_dark.png`}
@@ -46,13 +46,11 @@ export default function Header() {
           }
         </Link>
         <div className="flex md:order-2 space-x-3 md:space-x-0 rtl:space-x-reverse">
-          <Link href='/contact' className="hidden md:block w-full px-4 py-2 tracking-wide text-white capitalize transition-colors duration-300 transform bg-black rounded-none hover:bg-black/70 focus:outline-none focus:bg-black focus:ring focus:ring-blue-300 focus:ring-opacity-80">
+          <Link href='/contact' className={`${scrollY > 100 ? 'bg-black text-white ' : 'bg-white text-black'} hidden md:block w-full px-4 py-2 tracking-wide  capitalize transition-colors duration-300 transform bg-black rounded-none hover:bg-black/70 focus:outline-none focus:bg-black focus:ring focus:ring-blue-300 focus:ring-opacity-80`}>
           Contact us
         </Link>
           <button
-            className={`text-black md:hidden  ${
-              open ? "bg-black text-white" : "bg-faded-white"
-            }  w-14 h-14 flex items-center justify-center bg-black text-white rounded-full`}
+            className={`text-black md:hidden ${ open ? 'bg-black' : ''}  ${scrollY > 100 ? 'bg-black ' : ''}  w-14 h-14 flex items-center justify-center  text-white rounded-full`}
             onClick={() => setOpen(!open)}
           >
             {open ? (

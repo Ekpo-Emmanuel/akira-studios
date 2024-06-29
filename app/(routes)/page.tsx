@@ -6,6 +6,7 @@ import Services from "./_components/_Home/Services";
 import Cta1 from "./_components/CTA/Cta1";
 import Contact from "./_components/_Home/Contact";
 import Team from "./_components/_Home/Team";
+import Cta2 from "./_components/CTA/Cta2";
 
 export default function Home() {
   return (
@@ -22,6 +23,7 @@ export default function Home() {
       >
           <Hero />
         </div>
+        {/* <Cta2 /> */}
         <About />
         <WhyUs />
         <Services />

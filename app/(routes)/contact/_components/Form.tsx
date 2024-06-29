@@ -43,17 +43,7 @@ export default function Form() {
         }
     };
 
-    const handleRadioChange = (e: React.ChangeEvent<HTMLInputElement>) => {
-        setFormInput((prevFormInput) => ({
-          ...prevFormInput
-        }));
-        // Clear the subject error when user interacts with radio buttons
-        setErrors((prevErrors) => ({
-          ...prevErrors
-        }));
-      };
-
-      const validateField = (field: string, value: string) => {
+    const validateField = (field: string, value: string) => {
         let error = '';
         switch (field) {
             case 'firstName':
@@ -96,9 +86,7 @@ export default function Form() {
             setIsLoading(true);
             
             
-            console.log(formInput);
             try {
-                await new Promise((resolve) => setTimeout(resolve, 2000));
                 const response = await axios.post('/api/contact/', formInput, {
                     headers: { 'Content-Type': 'application/json' }
                 });
@@ -115,7 +103,9 @@ export default function Form() {
                 setFormInput(initialFormInput);
             }
         }
-      };
+    };
+
+
   return (
     <section className="">
       <h1 className="mt-6 text-2xl font-bold text-gray-900 sm:text-3xl md:text-4xl">
