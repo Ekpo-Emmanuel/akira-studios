@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Lato } from "next/font/google";
 import "./globals.css";
+import Head from 'next/head';
 import Header from "./(routes)/_components/Header/Header";
 import Footer1 from "./(routes)/_components/Footer/Footer1";
 
@@ -19,6 +20,14 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      <Head>
+        <link
+          rel="icon"
+          href="/assets/images/favicon.ico"
+          type="image/ico"
+          // sizes="<generated>"
+        />
+      </Head>
       <body className={lato.className}>
         <Header />
          {children}
