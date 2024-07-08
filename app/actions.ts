@@ -32,7 +32,7 @@ export const navItems: NavItem[] = [
     { title: 'Home', href:"/" },
     { title: 'About', href:"/about" },
     { title: 'Services', href:"/services" },
-    { title: 'Pricing', href:"/pricing" },
+    // { title: 'Pricing', href:"/pricing" },
 ]
 
 export const packages: Package[] = [
